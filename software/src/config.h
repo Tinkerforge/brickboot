@@ -37,8 +37,16 @@
 
 
 // LED
+#ifdef sam3s2
+#define PIN_LED_RED   {1 << 10, PIOA, ID_PIOA, PIO_OUTPUT_0, PIO_DEFAULT}
+#define PIN_LED_BLUE  {1 << 9, PIOA, ID_PIOA, PIO_OUTPUT_0, PIO_DEFAULT}
+#else
+#ifdef sam3s4
 #define PIN_LED_RED   {1 << 19, PIOC, ID_PIOC, PIO_OUTPUT_0, PIO_DEFAULT}
 #define PIN_LED_BLUE  {1 << 18, PIOC, ID_PIOC, PIO_OUTPUT_0, PIO_DEFAULT}
+#endif
+#endif
+
 #define PINS_LEDS     PIN_LED_RED, PIN_LED_BLUE
 
 #endif
