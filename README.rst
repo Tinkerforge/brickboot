@@ -6,9 +6,9 @@ This repository contains the source code of the Brick Bootloader.
 Usage
 -----
 
-To compile the c code we recommend you to install the newest CodeSourcery arm
-eabi gcc compiler 
-(http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite).
+To compile the C code we recommend you to install the newest CodeSourcery ARM
+EABI GCC compiler
+(https://sourcery.mentor.com/sgpp/lite/arm/portal/subscription?@template=lite).
 You can generate a Makefile from the cmake script with the
 generate_makefile shell script (in software/) and build the bootloader
 by invoking make in software/build/. The bootloader (.bin) can then be found
